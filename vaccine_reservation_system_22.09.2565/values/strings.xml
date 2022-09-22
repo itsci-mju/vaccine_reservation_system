@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">reservevaccine_project</string>
+
+    <string name="underline_text"><u>อ่านต่อ!!!</u></string>
+    <string name="underline_register"><u>ยังไม่มีบัญชีสมัครสมาชิก</u></string>
+
+</resources>
