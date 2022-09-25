@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vaccine_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal"
+    android:outlineAmbientShadowColor="@color/black"
+    android:outlineSpotShadowColor="@color/black"
+    android:padding="25dp"
+    app:cardBackgroundColor="@color/design_default_color_on_primary"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:contentPadding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_border"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutvaccine_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/vaccine_lots"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="#FFFFFF"
+                app:srcCompat="@drawable/list" />
+
+            <TextView
+                android:id="@+id/txtedit_Vdate_Input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/prompt_medium"
+                android:text="วัคซีน"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtsubdistrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="0"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/VaccineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/prompt_medium"
+                android:text="subdistrict"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtsubdistrict4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="0"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtedit_Vdate_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/dateinfect_start"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                app:srcCompat="@drawable/timetable" />
+
+            <TextView
+                android:id="@+id/Vac_Date_Input"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@font/prompt_medium"
+                android:text="Date"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/virus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                app:srcCompat="@drawable/company" />
+
+
+            <TextView
+                android:id="@+id/Company"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@font/prompt_medium"
+                android:text="newpatient"
+                android:textColor="#F44336"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+            <ImageView
+                android:id="@+id/txtedit"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="-10dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/circle_green"
+                android:radius="100dp"
+                app:srcCompat="@drawable/ic_editprofile" />
+
+            <ImageView
+                android:id="@+id/txtdel"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/circle_pink"
+                android:radius="100dp"
+                app:srcCompat="@drawable/ic_bin" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
