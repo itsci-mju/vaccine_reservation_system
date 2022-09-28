@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search_news_page">
+
+    <LinearLayout
+        android:layout_width="417dp"
+        android:layout_height="730dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/picture1"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="363dp"
+            android:layout_height="637dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Modify_card"
+                android:layout_width="352dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="339dp"
+                    android:layout_height="608dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="232dp"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="10dp"
+                        android:text="ดูข่าวสารทั่วไป"
+                        android:textAlignment="center"
+                        android:textColor="#3F51B5"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="187dp"
+                        android:background="@drawable/pic1"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="รู้ไว้!!! ก่อนฉีดวัคซีนโควิด-19"
+                        android:textAlignment="center"
+                        android:textColor="#D65757"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_vaccinename"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="วันที่ :"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_VaccineNo"
+                            android:layout_width="292dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="6/4/2565"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="8 ข้อต้องแจ้ง ก่อนฉีดวัคซีน  สิ่งที่ต้องแจ้งบุคลากรทางการแพทย์ก่อนฉีดวัคซีน ได้แก่  มีประวัติการแพ้ยา วัคซีน อาหาร  อย่างรุนแรงหรือจนเป็นอันตรายต่อชีวิต ผู้ที่มีโรคประจำตัว มีประวัติภูมิแพ้ หรือมีปัญหาภูมิคุ้มกันบกพร่อง มีไข้เกิน 38 องศาเซลเซียสในวันที่นัดฉีดวัคซีน มีรอยช้ำ หรือจ้ำเลือด หรือเลือดออกผิดปกติ หรือใช้ยาป้องกันการแข็งตัวของเลือดอยู่ เช่น วาร์ฟาริน ผู้มีภูมิคุ้มกันต่ำหรือใช้ยากดภูมิคุ้มกันอยู่ เช่น สเตียรอยด์ขนาดสูง ยารักษาโรคมะเร็ง หรือยากดภูมิคุ้มกัน อาการข้างเคียงทุกชนิดจากการฉีดวัคซีนชนิดนี้ในเข็มแรก ตั้งครรภ์ หรือมีแผนจะตั้งครรภ์ หรือให้นมบุตร" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/underline_text"
+                            android:textColor="#128FF3"
+                            android:textSize="24sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Button"
+                            android:visibility="invisible"
+                            tools:visibility="invisible" />
+
+                        <Button
+                            android:id="@+id/btn_saverecipt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#3F51B5"
+                            android:onClick="goHome"
+                            android:text="หน้าหลัก"
+                            android:textColor="#12ED1B" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
