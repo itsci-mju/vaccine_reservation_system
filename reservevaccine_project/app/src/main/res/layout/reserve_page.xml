@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reserve_page">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="65dp">
+
+        <LinearLayout
+            android:id="@+id/vop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/cart"
+                android:layout_width="94dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/b1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/number_1" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/trolley" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="สั่งจองวัคซีน"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#F1D800"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list"
+                android:layout_width="106dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/b2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/number_2_black" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/shopping_list_bar" />
+
+                <TextView
+                    android:id="@+id/textView69"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="รายการ"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#F1D800"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView80"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="จองวัคซีน"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#F1D800"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/payment"
+                android:layout_width="105dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/b3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/number_3_black" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/donation" />
+
+                <TextView
+                    android:id="@+id/textView75"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="ชำระเงิน"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#F1D800"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/receipt"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/b4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/number_4_black" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/bill" />
+
+                <TextView
+                    android:id="@+id/textView79"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="ใบเสร็จ"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#F1D800"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView81"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/prompt_medium"
+                    android:text="ลำดับคิว"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#F1D800"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shapecircle_orange"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_hospital"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/prompt_medium"
+                android:text="สั่งจองวัคซีน"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_reservedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/prompt_medium"
+                android:text="03/มี.ค./2565"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/prompt_medium"
+                android:text="ข้อมูลการสั่งจองวัคซีน"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/select_VaccineList_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_black"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spn_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_black"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="334dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/prompt_medium"
+                android:paddingTop="16dp"
+                android:text="คำเตือน"
+                android:textColor="#FF5722"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/prompt_medium"
+                android:text="โปรดตรวจสอบความถูกต้องในการสั่งจองวัคซีนของท่านเพราะวัคซีนที่จองแล้วจะไม่สามารถแก้ไขการจองได้"
+                android:textColor="#FF5722"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:buttonTint="@color/green"
+                android:fontFamily="@font/prompt_medium"
+                android:paddingLeft="10dp"
+                android:text="ข้าพเจ้าได้ตรวจสอบข้อมูลตามความเป็นจริงเพื่อยืนยันข้อมูล"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#FF9800"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_border"
+                    android:fontFamily="@font/prompt_medium"
+                    android:onClick="ClickaddReserve"
+                    android:text="สั่งจอง"
+                    android:textColor="#F4F4F4"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_border"
+                    android:fontFamily="@font/prompt_medium"
+                    android:onClick="goHome"
+                    android:text="ยกเลิก"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

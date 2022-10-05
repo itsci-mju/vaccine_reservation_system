@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableRow
+        android:layout_width="366dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioGroup
+            android:id="@+id/rg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radioButton_time_1"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:buttonTint="#26CABB"
+                android:fontFamily="@font/prompt_medium"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <RadioButton
+                android:id="@+id/radioButton_time_2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:buttonTint="#26CABB" />
+
+            <RadioButton
+                android:id="@+id/radioButton_time_3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:buttonTint="#26CABB" />
+
+            <RadioButton
+                android:id="@+id/radioButton_time_4"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:buttonTint="#26CABB" />
+
+            <RadioButton
+                android:id="@+id/radioButton_time_5"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:buttonTint="#26CABB" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/time_show1"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_time1"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/prompt_medium"
+                    android:paddingTop="5dp"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_amount1"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/prompt_medium"
+                    android:paddingLeft="10dp"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/time_show2"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView56"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_time2"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/prompt_medium"
+                    android:paddingTop="5dp"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_amount2"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/prompt_medium"
+                    android:paddingLeft="10dp"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/time_show3"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/show_queue_tietle"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_time3"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/prompt_medium"
+                    android:paddingTop="5dp"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_amount3"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/prompt_medium"
+                    android:paddingLeft="10dp"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/time_show4"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView59"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_time4"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/prompt_medium"
+                    android:paddingTop="5dp"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_amount4"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/prompt_medium"
+                    android:paddingLeft="10dp"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/time_show5"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_time5"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/prompt_medium"
+                    android:paddingTop="5dp"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_amount5"
+                    android:layout_width="145dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/prompt_medium"
+                    android:paddingLeft="10dp"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </TableRow>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
