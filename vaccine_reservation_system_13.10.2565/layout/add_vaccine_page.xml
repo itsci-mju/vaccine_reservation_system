@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_vaccine_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shapecircle_orange"
+            android:padding="10dp"
+            app:srcCompat="@drawable/vaccine_ic_1"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/prompt_medium"
+            android:text="เพิ่มวัคซีน"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="373dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:id="@+id/txt_vaccine_name"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:text="ชื่อวัคซีน"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txt_vcName"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/black_border_edite"
+                            android:ems="10"
+                            android:fontFamily="@font/prompt_medium"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:id="@+id/txt_datein"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:text="วันที่นำเข้า"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/date_in"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/black_border_edite"
+                            android:ems="10"
+                            android:fontFamily="@font/prompt_medium"
+                            android:inputType="date"
+                            android:onClick="onclickDate1"
+                            android:paddingLeft="10dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:id="@+id/txt_date_mgf"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:text="วันที่ผลิต"
+                            android:textAlignment="center"
+                            android:textColor="#020202"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/mgf_date"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/black_border_edite"
+                            android:ems="10"
+                            android:inputType="date"
+                            android:onClick="onclickDate2"
+                            android:paddingLeft="10dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:id="@+id/txt_date_exp"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:text="วันหมดอายุ"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/exp_date"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/black_border_edite"
+                            android:ems="10"
+                            android:inputType="date"
+                            android:onClick="onclickDate3"
+                            android:paddingLeft="10dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:id="@+id/txt_does"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:text="จำนวนโดส"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edit_does"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/black_border_edite"
+                            android:ems="10"
+                            android:fontFamily="@font/prompt_medium"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:id="@+id/txt_company"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:text="บริษัทผู้ผลิต"
+                            android:textColor="#000000"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/manufacturing_company"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:background="@drawable/black_border_edite"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:id="@+id/txt_imported_company"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:text="บริษัทผู้นำเข้า"
+                            android:textColor="#000000"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/imported_company"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/black_border_edite"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:id="@+id/textView89"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:text="รุ่นการผลิต"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edit_product_version"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/black_border_edite"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:id="@+id/textView90"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:text="เลขทะเบียนวัคซีน"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edit_register_no"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/black_border_edite"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="15dp">
+
+                        <TextView
+                            android:id="@+id/txt_does_price"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:text="ราคาโดส"
+                            android:textColor="#000000"
+                            android:textAlignment="center"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edite_doesPrice"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/black_border_edite"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_addvaccine"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_border_edite"
+                android:backgroundTint="#1E88E5"
+                android:fontFamily="@font/prompt_medium"
+                android:onClick="add_vaccine"
+                android:text="บันทึกวัคซีน"
+                android:textColor="@color/white"
+                android:textColorHighlight="#0C0C0C"
+                android:textColorHint="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigator"
+        app:itemBackground="@color/purple_500"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_admin"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

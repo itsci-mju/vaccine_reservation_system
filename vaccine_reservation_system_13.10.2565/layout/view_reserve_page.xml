@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view_reserve_page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Modify_card"
+                android:layout_width="352dp"
+                android:layout_height="482dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="78dp"
+                        android:layout_height="77dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/recipt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/prompt_medium"
+                        android:text="ใบแจ้งชำระเงินการจองวัคซีน"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/prompt_medium"
+                        android:paddingStart="10dp"
+                        android:text="ข้อมูลการจองวัคซีน"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_paymentid"
+                            android:layout_width="17dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:paddingStart="16dp"
+                            android:text="เลขที่การสั่งจอง"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txt_reserve_Id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:paddingRight="20dp"
+                            android:text="null"
+                            android:textAlignment="textEnd"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:paddingStart="16dp"
+                            android:text="วันที่สั่งจอง"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txt_date_reserve"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:paddingRight="20dp"
+                            android:text="null"
+                            android:textAlignment="viewEnd"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_vaccinename"
+                            android:layout_width="44dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:paddingStart="16dp"
+                            android:text="วัคซีน"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txt_Vaccine_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:paddingRight="20dp"
+                            android:text="Moderna"
+                            android:textAlignment="viewEnd"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:paddingLeft="15dp"
+                            android:text="จำนวนวัคซีน"
+                            android:textAlignment="viewStart"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txt_number_vaccine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:paddingRight="20dp"
+                            android:text="null"
+                            android:textAlignment="viewEnd"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_pricedate1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:paddingStart="16dp"
+                            android:text="สถานะ"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txt_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/prompt_medium"
+                            android:paddingRight="20dp"
+                            android:text="null"
+                            android:textAlignment="viewEnd"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="213dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/prompt_medium"
+                            android:paddingLeft="20dp"
+                            android:text="ช่องทางชำระเงินผ่านธนาคาร"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            app:srcCompat="@drawable/bank_banner" />
+
+                        <TextView
+                            android:id="@+id/textView88"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/prompt_medium"
+                            android:paddingLeft="10dp"
+                            android:text="กำหนดโอนชำระเงินการจองวัคซีน"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/txt_note"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/prompt_medium"
+                            android:text="ตั้งแต่ วันที่ 1 - 10 ตุลาคม พ.ศ. 2565"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/btn_saveReserve"
+                android:layout_width="359dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_border"
+                android:fontFamily="@font/prompt_medium"
+                android:text="บันทึกรูป"
+                android:textColor="#FBFBFB"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btn_list_reserve"
+                android:layout_width="359dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_border"
+                android:fontFamily="@font/prompt_medium"
+                android:text="รายการสั่งจองวัคซีน"
+                android:textColor="#FBFBFB"
+                android:textColorHighlight="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
