@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">reservevaccine_project</string>
+
+    <string name="underline_text"><u>อ่านต่อ!!!</u></string>
+    <string name="underline_register"><u>ยังไม่มีบัญชีสมัครสมาชิก</u></string>
+    <string name="underLine__________"><u>_________________________________________________</u></string>
+    <string name="title_activity_summary_report_page">summary_report_page</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+</resources>
